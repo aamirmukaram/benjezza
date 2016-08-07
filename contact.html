@@ -131,79 +131,84 @@
             query at our earliest convenience!
         </div>
         <div class="col-lg-12">
-            <form class="form-horizontal">
+            <form class="form-horizontal" novalidate>
                 <fieldset>
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="name">Name</label>
-                        <div class="col-md-8">
-                            <input id="name" name="name" placeholder="Full Name" class="form-control input-md" required
+                        <div class="col-md-8 controls">
+                            <input id="name" name="name" data-validation-required-message="Full name is required" placeholder="Full Name" class="form-control input-md" required
                                    type="text">
-                            <span class="help-block">Enter your Name here</span>
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="busname">Business Name</label>
-                        <div class="col-md-8">
-                            <input id="compname" name="compname" placeholder="Company Name"
+                    <div class="form-group control-group">
+                        <label class="col-md-4 control-label" for="compname">Business Name</label>
+                        <div class="col-md-8 controls">
+                            <input id="compname" required name="compname" data-validation-required-message="Business name is required" placeholder="Company Name"
                                    class="form-control input-md" type="text">
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="phone">Phone #</label>
-                        <div class="col-md-8">
-                            <input id="phone" name="phone" placeholder="Phone Number" class="form-control input-md"
-                                   required type="text">
+                        <div class="col-md-8 controls">
+                            <input id="phone" name="phone" data-validation-required-message="Phone # is required" required placeholder="Phone Number" class="form-control input-md" type="number">
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="email">Address</label>
-                        <div class="col-md-8">
-                            <input id="email" name="email" placeholder="Email Address" class="form-control input-md"
-                                   required type="text">
-                            <input id="email" name="email" placeholder="Email Address2" class="form-control input-md"
-                                   required type="text">
+                        <div class="col-md-8 controls">
+                            <input type="email" id="email" name="email" placeholder="Email Address" class="form-control input-md" required>
+                        </div>
+                    </div>
+                    <div class="form-group control-group">
+                        <label class="col-md-4 control-label" for="email"></label>
+                        <div class="col-md-8 controls">
+                            <input name="emailAgain"
+                                   placeholder="Email Address again"
+                                   class="form-control input-md"
+                                   data-validation-matches-match="email"
+                                   data-validation-matches-message="Must match email address entered above">
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="City">City</label>
-                        <div class="col-md-8">
-                            <input id="city" name="phone" placeholder="City" class="form-control input-md" required
+                        <div class="col-md-8 controls">
+                            <input id="city" name="city" data-validation-required-message="City is required" placeholder="City" class="form-control input-md" required
                                    type="text">
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="state">State</label>
-                        <div class="col-md-8">
-                            <input id="state" name="phone" placeholder="State" class="form-control input-md" required
+                        <div class="col-md-8 controls">
+                            <input id="state" name="state" data-validation-required-message="State is required" placeholder="State" class="form-control input-md" required
                                    type="text">
                         </div>
                     </div>
 
                     <!-- Text input-->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="postcode">Post Code</label>
-                        <div class="col-md-8">
-                            <input id="postcode" name="phone" placeholder="Post Code" class="form-control input-md"
-                                   required type="text">
+                        <div class="col-md-8 controls">
+                            <input id="postcode" data-validation-required-message="Post code is required" name="postCode" placeholder="Post Code" class="form-control input-md"
+                                   required type="number">
                         </div>
                     </div>
 
                     <!-- Select Multiple -->
-                    <div class="form-group">
+                    <div class="form-group control-group">
                         <label class="col-md-4 control-label" for="whichservice">Service most interested in (you can
                             select more than one)</label>
-                        <div class="col-md-8">
+                        <div class="col-md-8 controls">
                             <select id="whichservice" name="whichservice" class="form-control" multiple="multiple">
                                 <option value="1">3D Model</option>
                                 <option value="2">360 Panorama</option>
@@ -214,14 +219,12 @@
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="col-md-4 control-label" for="comment">Comments</label>
-                        <div class="col-md-8">
+                    <div class="form-group control-group">
+                        <label class="col-md-4 control-label" for="comments">Comments</label>
+                        <div class="col-md-8 controls">
                             <textarea id="comments" name="comments" class="form-control" rows="5"></textarea>
                         </div>
                     </div>
-
-
 
 
                     <!-- Button -->
@@ -234,6 +237,9 @@
 
                 </fieldset>
             </form>
+            <div id="success">
+
+            </div>
 
 
         </div>
@@ -279,7 +285,7 @@
     $(document).ready(function () {
         $('#myCarousel').carousel({
             interval: 10000
-        })
+        });
         $('.fdi-Carousel .item').each(function () {
             var next = $(this).next();
             if (!next.length) {

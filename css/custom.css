@@ -1,0 +1,378 @@
+body {
+  cursor: url('../img/vunique_cursor.png'), auto;
+}
+a {
+  cursor: url('../img/vunique_cursor_white.png'), auto;
+}
+#services {
+  height:100vh;
+}
+.section-heading {
+  color: #25aee1;
+  font-family: 'Manifesto';
+  font-size: 4em !important;
+}
+::-webkit-input-placeholder {
+  color:#25aee1 !important;
+  font-family:'Open Sans';
+  opacity:.5 !important;
+}
+
+::-moz-placeholder {
+  color:#25aee1 !important;
+  font-family:'Open Sans';
+  opacity:.5 !important;
+}
+
+::-ms-placeholder {
+  color:#25aee1 !important;
+  font-family:'Open Sans';
+  opacity:.5 !important;
+}
+
+::placeholder {
+  color:#25aee1 !important;
+  font-family:'Open Sans';
+  opacity:.5 !important;
+}
+
+
+.home_header {
+  height:100vh;
+	background-image: url(../img/slider.jpg);
+}
+.services_header {
+  height:60vh;
+  background-image: url(../img/header22_bg.jpg);
+}
+
+/************************************ Available on Apple - Google Store ************************************/
+.available_on {
+  width:300px;
+  bottom: 50px;
+  left:50px;
+  z-index: 999999;
+  display: block;
+  position: absolute;
+  background: #fff;
+}
+.available_on .title {
+  font-size:5em;
+  color: #25AEE1;
+  font-family: 'Droid', sans-serif;
+}
+.available_on_brand {
+  height: 80px;
+  width:220px;
+  padding:10px;
+  margin:auto;
+}
+.available_on_brand a:hover {
+  cursor: url('../img/vunique_cursor_white.png'), auto;	
+}
+.app_store, .googele_play_store {
+  height: 60px;
+  text-indent: -99999px;
+}
+.app_store {
+  background: url(../img/Apple_Store.jpg) no-repeat;
+}
+.googele_play_store {
+  background: url(../img/google-play-badge.jpg) no-repeat;
+}
+
+/************************************ Bootstrap Carousel Custom Code ************************************/
+.home_header .carousel .item {
+  margin-top: 20%;
+  min-height:500px;
+}
+.home_header .carousel .item h3 {
+  font-size: 6em;
+  font-family: 'ManifestoRegular';
+}
+.home_header .carousel .item .tagline {
+  position: relative;
+  font-size: 1em;
+  text-transform:uppercase;
+}
+.home_header .carousel .item span {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 10px;
+}
+.home_header .carousel .item img {
+  width: 420px;
+  height: auto;
+}
+
+.services_header .carousel .item {
+  margin-top: 20%;
+  min-height:200px;
+}
+.services_header .carousel .item h3 {
+  font-size: 3em;
+  font-family: 'ManifestoRegular';
+}
+.services_header .carousel .item .tagline {
+  position: relative;
+  font-size: 1em;
+  text-transform:uppercase;
+}
+.services_header .carousel .item span {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  padding: 10px;
+}
+.services_header .carousel .item img {
+  width: 200px;
+  height: auto;
+}
+
+/************************************ Owl Carousel Custom Code ************************************/
+.owl-wrapper-outer, .owl-wrapper {
+  height: 520px;
+}
+.owl-carousel .item{
+  margin: 3px;
+}
+owl-carousel .item img{
+  display: block;
+  width: 420px;
+  margin: auto;
+  height: auto;
+}
+.owl-next, .owl-prev {
+  display: inline-block;
+  background: #25aee1;
+  width:200px;
+  padding:20px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+.owl-prev {
+  content: "";
+  margin-right: 20px;
+}
+.owl-next:hover, .owl-prev:hover {
+  background: #fff;
+  color:#25aee1;
+  border: #25aee1 1px solid;
+}
+.instruction_page {
+  width: 320px;
+  margin: auto;
+}
+.instr_img {
+  display: block;
+  height: 250px;
+  margin: auto;
+  text-indent: -99999px;
+}
+.instr_vlogo {
+  background: url(../img/vunique_logo.png) no-repeat center center;
+}
+.instr_scan {
+  background: url(../img/scan_instructions.png) no-repeat center center;
+}
+.instr_interact {
+  background: url(../img/insteract_instructions.png) no-repeat center center;
+}
+.instr_vlogo, .instr_scan, .instr_interact, .wheel_evolve {
+  background-size:contain;
+}
+.instr_title {
+  font-size: 4em;
+  text-align: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  color: #25AEE1;
+}
+.instr_title object {
+  padding-top: 20px;
+}
+.instr_desc {
+  width: 300px;
+  margin: auto;
+  font-family: 'Open Sans';
+  font-size: 1.2em;
+  text-align: center;
+}
+.wheel_evolve {
+  height:400px;
+  text-indent: -99999px;
+  direction:ltr;
+}
+.wheel_evolve_img {
+  height: 100%;
+  background: url(../img/wheel_evolve.png) no-repeat center center;
+  background-size: contain;
+}
+.info_desc p {
+  font-family: 'Open Sans';
+  font-size: 1.4em;
+}
+.info_desc h2 {
+  color:#25aee1;
+}
+blockquote {
+  font-size: 2em;
+  color: #25aee1;
+  text-align: center;
+  border-top: 1px solid #25aee1;
+  border-bottom: 1px solid #25aee1;
+  padding:40px;
+  margin:40px;
+}
+
+.example_img_restrict {
+  height: 400px;
+}
+
+/************************************ Packages Custom Code ************************************/
+
+.panel-info>.panel-heading i {
+  font-size: 5em;
+  padding-top:30px;
+}
+
+
+/************************************ Clients Carousel Custom Code ************************************/
+.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+.onebyone-carosel .active.left { left: -33.33%; }
+.onebyone-carosel .active.right { left: 33.33%; }
+.onebyone-carosel .next { left: 33.33%; }
+.onebyone-carosel .prev { left: -33.33%; }
+.clients .carousel .item {
+  min-height:300px;
+  margin-top:0px;
+}
+
+.clients h3.section-subheading {
+	font-size: 16px;
+	text-transform: none;
+	font-weight: 400;
+	margin-bottom: 40px
+}
+
+
+
+
+
+
+
+
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.modal-body .three_sixty_view_container .ricoh-theta-spherical-image {
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+/************************************ VUNIQUE SERVICES Custom Code ************************************/
+.product_image, .example_img {
+  height: 300px;
+  margin:auto;
+}
+.three_dimension_img {
+  background: url(../img/vunique_3D.png)no-repeat center center;
+}
+.three_sixty_panorama_img {
+  background: url(../img/vunique_Panorama.png) no-repeat center center;
+}
+.navigation_img {
+  background: url(../img/vunique_Navigation.png) no-repeat center center;
+}
+.image_overlay_img {
+  background: url(../img/vunique_Image.png) no-repeat center center;
+}
+.video_overlay_img {
+  background: url(../img/vunique_Video.png) no-repeat center center;
+}
+.stats_img {
+  background: url(../img/vunique_Statistics.png) no-repeat center center;
+}
+.services_row {
+  padding: 50px 0px;
+}
+.sample_row {
+  border-bottom: double 6px #25aee1;
+  padding-bottom: 30px;
+}
+.sample_row:last-child {
+  border-bottom: none;
+}
+.three_dimension_marker {
+  background: url(../img/3d-01.png) no-repeat center center;
+}
+.three_sixty_marker {
+  background: url(../img/panorama-02.png) no-repeat center center;
+}
+.navigation_marker {
+  background: url(../img/navigation-03.png) no-repeat center center;
+}
+.image_overlay_marker {
+  background: url(../img/image_overlay-04.png) no-repeat center center;
+}
+.video_overlay_marker {
+  background: url(../img/video_overlay-05.png) no-repeat center center;
+}
+.stats_marker {
+  background: url(../img/statistics-06.png) no-repeat center center;
+}
+.three_dimension_img, .three_sixty_panorama_img, .navigation_img, .image_overlay_img, .video_overlay_img, .stats_img, .three_dimension_marker, .three_sixty_marker, .navigation_marker, .image_overlay_marker, .video_overlay_marker, .stats_marker {
+  background-size:contain;
+  text-indent: -99999px;
+  direction: ltr;
+}
+.icon_centre, .example_desc {
+  height: 300px;
+  position: relative;
+}
+.icon_centre i, .example_desc p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.icon_centre i {
+  color: #ccc;
+  text-shadow: white -1px 1px; 
+}
+.example_desc p {
+  font-family:'Open Sans';
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .wheel_evolve {
+    height: 300px;
+  }
+  .wheel_evolve_img {
+    background: url(../img/wheel_evolve_sm.png) no-repeat center center;
+  }
+}
